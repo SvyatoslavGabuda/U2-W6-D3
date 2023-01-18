@@ -1,0 +1,34 @@
+button {
+    padding: $paddMedio;
+    background-color: $colorePrimario;
+    border: 10px inset $coloreSecondario;
+    color: $coloretesto;
+    font-size: 1.4em;
+    font-weight: 700;
+    &:hover{
+        background-color: $coloreTerziario;
+    border: 10px outset $coloreSecondario;
+    color: $colorePrimario;
+
+    }
+}
+button.tema{
+    
+    background-color: $colorePrimarioS;
+    border: 10px inset $coloreSecondarioS;
+    color: $coloretesto;
+    
+    &:hover{
+        background-color: $coloreTerziarioS;
+    border: 10px outset $coloreSecondarioS;
+    color: $colorePrimarioS;
+
+    }
+
+}
+#apri {
+    position: absolute;
+    top:50%; 
+    width: 100%;
+    
+}

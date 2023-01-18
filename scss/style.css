@@ -1,0 +1,189 @@
+button {
+  padding: 15px;
+  background-color: #052F5F;
+  border: 10px inset #005377;
+  color: #F1A208;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+button:hover {
+  background-color: #06A77D;
+  border: 10px outset #005377;
+  color: #052F5F;
+}
+
+button.tema {
+  background-color: #f75c03;
+  border: 10px inset #d90368;
+  color: #F1A208;
+}
+button.tema:hover {
+  background-color: #820263;
+  border: 10px outset #d90368;
+  color: #f75c03;
+}
+
+#apri {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #052F5F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+}
+header p {
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 900;
+  color: #F1A208;
+}
+header p:hover {
+  color: #D5C67A;
+}
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px;
+  display: flex;
+}
+header ul li {
+  margin: 5px;
+  padding: 15px;
+  border: 2px solid #06A77D;
+  background-color: #005377;
+  color: #F1A208;
+}
+header ul li:hover {
+  background-color: #D5C67A;
+  color: #052F5F;
+}
+
+header.tema {
+  background-color: #f75c03;
+}
+header.tema p {
+  color: #04a777;
+}
+header.tema p:hover {
+  color: #291720;
+}
+header.tema ul li {
+  border: 2px solid #820263;
+  background-color: #d90368;
+  color: #04a777;
+}
+header.tema ul li:hover {
+  background-color: #291720;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main h1 {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0px;
+  margin: 0;
+  background-color: #06A77D;
+  color: #F1A208;
+  font-weight: 900;
+}
+main section {
+  display: flex;
+}
+main section .card {
+  border: 15px outset #052F5F;
+  border-radius: 20px;
+  margin: 30px;
+  background-color: #06A77D;
+  display: flex;
+  flex-direction: column;
+}
+main section .card .intestazione {
+  position: relative;
+  margin: 5px;
+  border: 15px inset #052F5F;
+}
+main section .card .intestazione h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+main section .card .intestazione .cane {
+  width: 100%;
+}
+main section .card p {
+  padding: 15px;
+  color: #D5C67A;
+}
+main section .card button {
+  margin: 30px;
+}
+
+main.tema h1 {
+  background-color: #820263;
+  color: #04a777;
+}
+main.tema section .card {
+  border: 15px outset #f75c03;
+  background-color: #820263;
+}
+main.tema section .card .intestazione {
+  border: 15px inset #f75c03;
+}
+main.tema section .card p {
+  color: #291720;
+}
+
+footer {
+  width: 100%;
+  background-color: #052F5F;
+  color: #D5C67A;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer.tema {
+  background-color: #f75c03;
+  color: #291720;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #904e55;
+}
+
+body.tema {
+  background-color: #564e58;
+}
+
+.hide {
+  display: none;
+}
+
+#modal {
+  background-color: red;
+  z-index: 10;
+  height: 200px;
+  width: 50%;
+  right: 25%;
+  border: 10px double yellow;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

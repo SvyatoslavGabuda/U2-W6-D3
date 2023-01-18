@@ -1,0 +1,35 @@
+@import 'variabili';
+@import 'button';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $coloreSfondo;
+}
+body.tema{
+    background-color: $coloreSfondoS;
+
+}
+.hide{
+    display: none;
+}
+#modal{
+    background-color: red;
+    z-index: 10;
+    height: 200px;
+    width: 50%;
+    right: 25%;
+    border: 10px double yellow;
+    padding: $paddMedio;
+    
+    
+    flex-direction: column;
+    justify-content: center;
+    
+
+
+}

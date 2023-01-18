@@ -1,0 +1,12 @@
+footer{
+    width: 100%;
+    background-color: $colorePrimario;
+    color: $coloretestoSec;
+    padding: $paddMedio 0;
+    display: flex;
+    justify-content: center;
+}
+footer.tema{
+    background-color: $colorePrimarioS;
+    color: $coloretestoSecS;
+}

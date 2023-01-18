@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>SCSS exercise</title>
+  </head>
+  <body>
+    <button id="apri" class="hide">Apri</button>
+    <header>
+      <p>Logo</p>
+      <nav>
+        <ul>
+          <li id="cambiaTema">Cambia il tema</li>
+          <li id="ritornaTema" class="hide">Cambia il tema</li>
+          <li id="nascondi">Nascondi il contenuto</li>
+          <li id="aggiungi">Aggiungi contenuto</li>
+          <li id="sfondo">Cambia lo sfondo</li>
+        </ul>
+      </nav>
+    </header>
+    <div id="modal" class="hide">
+      <input
+        id="inputTitolo"
+        type="text"
+        placeholder="Inserisci un testo descrittovo"
+      />
+      <input
+        id="inputTesto"
+        type="text"
+        placeholder="Inserisci un testo descrittovo"
+      />
+      <button id="salva">Salva</button>
+    </div>
+    <main>
+      <h1>Cards:</h1>
+      <section>
+        <div class="card">
+          <div class="intestazione">
+            <h2>Dog Picture</h2>
+            <img class="cane" src="https://placedog.net/500" alt="dog pic" />
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+            sit voluptas nostrum maiores unde expedita aspernatur quidem natus
+            fuga earum at, minima nobis, nam quisquam molestiae dicta labore
+            cupiditate similique!
+          </p>
+          <button class="qualcosa">fai qualcosa</button>
+        </div>
+        <div class="card">
+          <div class="intestazione">
+            <h2>Dog Picture</h2>
+            <img class="cane" src="https://placedog.net/500" alt="dog pic" />
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+            sit voluptas nostrum maiores unde expedita aspernatur quidem natus
+            fuga earum at, minima nobis, nam quisquam molestiae dicta labore
+            cupiditate similique!
+          </p>
+          <button class="qualcosa">fai qualcosa</button>
+        </div>
+      </section>
+    </main>
+    <footer><p>&copy 2023 Epicode</p></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

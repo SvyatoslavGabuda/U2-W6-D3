@@ -1,0 +1,71 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    h1{
+        width: 100%;
+        text-align: center;
+        padding: $paddGrande 0px;
+        margin: 0;
+        background-color: $coloreTerziario;
+        color: $coloretesto;
+        font-weight: 900;
+
+    }
+    section{
+        display: flex;
+        .card{
+            border: 15px outset $colorePrimario;
+            border-radius: 20px;
+            margin: $paddGrande;
+            background-color: $coloreTerziario;
+            display: flex;
+            flex-direction: column;
+            .intestazione{
+                position: relative;
+                margin: $paddPic;
+                border: 15px inset $colorePrimario;
+                h2{
+                    position: absolute;
+                    top: 10px; left:10px
+                }
+                .cane{
+                    width: 100%;
+                }
+            }
+            p{
+                padding: $paddMedio;
+                color: $coloretestoSec;
+            }
+            button {
+                margin: $paddGrande;
+            }
+        }
+    }
+}
+main.tema{
+    
+    h1{
+       
+        background-color: $coloreTerziarioS;
+        color: $coloretestoS;
+    }
+    section{
+  
+        .card{
+            border: 15px outset $colorePrimarioS;
+           
+            background-color: $coloreTerziarioS;
+           
+            .intestazione{
+              
+                border: 15px inset $colorePrimarioS;
+               
+            }
+            p{
+                color: $coloretestoSecS;
+            }
+        }
+    }
+}
