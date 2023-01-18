@@ -48,26 +48,10 @@ const apriTutto = function () {
 btnApri.addEventListener("click", apriTutto);
 const btnSfondo = document.getElementById("sfondo");
 const cambiaSfondo = function () {
-  let random = Math.floor(Math.random() * 5);
-  switch (random) {
-    case 0:
-      body.style.backgroundColor = "white";
-      break;
-    case 1:
-      body.style.backgroundColor = "red";
-      break;
-    case 2:
-      body.style.backgroundColor = "blue";
-      break;
-    case 3:
-      body.style.backgroundColor = "black";
-      break;
-    case 4:
-      body.style.backgroundColor = "green";
-      break;
-    default:
-      console.log("c'e un proble con lo sfondo");
-  }
+  let random = Math.floor(Math.random() * 256);
+  let random1 = Math.floor(Math.random() * 256);
+  let random2 = Math.floor(Math.random() * 256);
+  body.style.backgroundColor = `rgb(${random}, ${random1}, ${random2})`;
 };
 btnSfondo.addEventListener("click", cambiaSfondo);
 const btnAggiung = document.getElementById("aggiungi");
@@ -78,11 +62,11 @@ const apriModal = function () {
 };
 btnAggiung.addEventListener("click", apriModal);
 
+const btnQualcosa = document.querySelectorAll(".qualcosa");
+
 const creaCard = function () {
   const inputTitolo = document.getElementById("inputTitolo");
-
   const inputTesto = document.getElementById("inputTesto");
-
   const titolo = document.createElement("h2");
   const paragrafo = document.createElement("p");
   const card = document.createElement("div");
@@ -96,6 +80,7 @@ const creaCard = function () {
   contenitoreImg.classList.add("intestazione");
   contenitoreImg.innerHTML = `<img class="cane" src="https://placedog.net/500" alt="dog pic" />`;
   bottone.classList.add("qualcosa");
+  bottone.addEventListener("click", cambiaSfondo);
   contenitoreImg.appendChild(titolo);
   card.appendChild(contenitoreImg);
   card.appendChild(paragrafo);
@@ -108,4 +93,7 @@ const creaCard = function () {
 const btnSalva = document.getElementById("salva");
 btnSalva.addEventListener("click", creaCard);
 
-const btnQualcosa = document.querySelectorAll(".qualcosa");
+console.log(btnQualcosa);
+btnQualcosa.forEach((btn) => {
+  btn.addEventListener("click", cambiaSfondo);
+});
