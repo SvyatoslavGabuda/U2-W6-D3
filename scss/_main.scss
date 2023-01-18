@@ -15,7 +15,10 @@ main{
     }
     section{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         .card{
+            width: 40%;
             border: 15px outset $colorePrimario;
             border-radius: 20px;
             margin: $paddGrande;

@@ -33,6 +33,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 5;
   background-color: #052F5F;
   display: flex;
   justify-content: space-between;
@@ -102,8 +103,11 @@ main h1 {
 }
 main section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 main section .card {
+  width: 40%;
   border: 15px outset #052F5F;
   border-radius: 20px;
   margin: 30px;

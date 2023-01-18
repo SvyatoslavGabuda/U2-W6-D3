@@ -94,7 +94,7 @@ const creaCard = function () {
   paragrafo.innerText = inputTesto.value;
   card.classList.add("card");
   contenitoreImg.classList.add("intestazione");
-  contenitoreImg.innerHTML = `<img src="https://placedog.net/500" alt="dog pic" />`;
+  contenitoreImg.innerHTML = `<img class="cane" src="https://placedog.net/500" alt="dog pic" />`;
   bottone.classList.add("qualcosa");
   contenitoreImg.appendChild(titolo);
   card.appendChild(contenitoreImg);
@@ -107,3 +107,5 @@ const creaCard = function () {
 };
 const btnSalva = document.getElementById("salva");
 btnSalva.addEventListener("click", creaCard);
+
+const btnQualcosa = document.querySelectorAll(".qualcosa");
